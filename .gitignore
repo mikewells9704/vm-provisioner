@@ -1,0 +1,22 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environments and Virtual Environments
+.env
+.venv
+env/
+venv/
+ENV/
+
+# IDEs and OS files
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+
+# Poetry / Pipenv lock files (optional, but keep out if not used)
+pip-log.txt
+pip-delete-this-directory.txt
