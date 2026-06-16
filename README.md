@@ -1,6 +1,6 @@
-# Gimme VMs 🚀
+# VM Provisioner 🚀
 
-`gimme-vms` is a lightweight, automated Python script designed to bulk-provision Google Compute Engine (GCE) virtual machines (VMs). It is specifically tailored for provisioning high-performance GPU instances (like NVIDIA H100s via A3 machine shapes) but can be used for any standard Compute Engine VM.
+`vm-provisioner` is a lightweight, automated Python script designed to bulk-provision Google Compute Engine (GCE) virtual machines (VMs). It is specifically tailored for provisioning high-performance GPU instances (like NVIDIA H100s via A3 machine shapes) but can be used for any standard Compute Engine VM.
 
 The script checks for already running or pending instances matching a specific naming pattern in a zone and only requests the difference needed to reach your target capacity—limiting how many VMs are requested per run to avoid exceeding quotas or running into sudden billing spikes.
 
@@ -34,8 +34,8 @@ Before running the provisioner, make sure you have completed the following:
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/YOUR_USERNAME/gimme-vms.git
-   cd gimme-vms
+   git clone https://github.com/mikewells9704/vm-provisioner.git
+   cd vm-provisioner
    ```
 
 2. **Install dependencies**:
@@ -47,7 +47,7 @@ Before running the provisioner, make sure you have completed the following:
 
 ## Configuration
 
-All configuration is managed inside the top section of [main.py](file:///Users/wellsmike/Downloads/gimme-vms/main.py). Open the file and adjust these parameters:
+All configuration is managed inside the top section of [main.py](file:///Users/wellsmike/Downloads/vm-provisioner/main.py). Open the file and adjust these parameters:
 
 | Variable | Description | Default |
 | :--- | :--- | :--- |
